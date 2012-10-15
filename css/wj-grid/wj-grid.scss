@@ -1,10 +1,7 @@
-$wj-responsive: true !default;
-
 /* GRID */
 .h1, .h2, .h3, .h4, .h5, .h6,
 .h7, .h8, .h9, .h10, .h11, .h12 {
   float : left;
-  margin: 0 30px 30px 0;
   -moz-box-sizing   : border-box;
   -webkit-box-sizing: border-box;
   box-sizing        : border-box;
@@ -12,8 +9,8 @@ $wj-responsive: true !default;
 .end { margin-right: 0 !important; }
 .parent { margin: 0 auto; }
 
-@mixin wj-grid($grid: 978) {
-    @if $wj-responsive {
+@mixin wj-grid($grid: responsive) {
+    @if 'responsive' == $grid {
         @media all and (min-width: 1320px) {
             @include wj-get-grid(1320);
         }
@@ -82,6 +79,10 @@ $wj-responsive: true !default;
     @else if 978 == $grid {
         .parent {
             width: 978px;
+        }
+        .h1, .h2, .h3, .h4, .h5, .h6,
+        .h7, .h8, .h9, .h10, .h11, .h12 {
+            margin: 0 30px 30px 0;
         }
         .h1  { width: 54px;  }
         .h2  { width: 138px; }
