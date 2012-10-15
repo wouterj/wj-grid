@@ -82,13 +82,13 @@ The grids needs to be wrapped in a ``.parent`` element, which is the ``body``
 element most of the time. The last element in a row should get a ``.end`` class.
 
 Comming Soon
-~~~~~~~~~~~~
+------------
 
 - Stylus and LESS support;
 - Vertical Grids.
 
 Contributing
-~~~~~~~~~~~~
+------------
 
 I love contributors. We can get amazing ideas and the best, allround comptable, 
 code as possible!
