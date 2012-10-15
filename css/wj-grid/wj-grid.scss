@@ -1,0 +1,158 @@
+$wj-responsive: true !default;
+
+/* GRID */
+.h1, .h2, .h3, .h4, .h5, .h6,
+.h7, .h8, .h9, .h10, .h11, .h12 {
+  float : left;
+  margin: 0 30px 30px 0;
+  -moz-box-sizing   : border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing        : border-box;
+}
+.end { margin-right: 0 !important; }
+.parent { margin: 0 auto; }
+
+@mixin wj-grid($grid: 978) {
+    @if $wj-responsive {
+        @media all and (min-width: 1320px) {
+            @include wj-get-grid(1320);
+        }
+        @media all and (min-width: 1105px) and (max-width: 1320px) {
+            @include wj-get-grid(1105);
+        }
+        @media all and (min-width: 978px) and (max-width: 1105px) {
+            @include wj-get-grid(978);
+        }
+        @media all and (min-width: 748px) and (max-width: 978px) {
+            @include wj-get-grid(748);
+        }
+        @media all and (max-width: 748px) {
+            @include wj-get-grid(295);
+        }
+    }
+    @else {
+        @include wj-get-grid($grid);
+    }
+}
+
+@mixin wj-get-grid($grid) {
+    @if 1320 == $grid {
+        .parent {
+            background: url(http://griddle.it/1320-12-40);
+            width: 1320px;
+        }
+        .h1, .h2, .h3, .h4, .h5, .h6,
+        .h7, .h8, .h9, .h10, .h11, .h12 {
+            margin: 0 40px 40px 0;
+        }
+        .h1  { width: 73px;   }
+        .h2  { width: 187px;  }
+        .h3  { width: 300px;  }
+        .h4  { width: 413px;  }
+        .h5  { width: 527px;  }
+        .h6  { width: 640px;  }
+        .h7  { width: 753px;  }
+        .h8  { width: 867px;  }
+        .h9  { width: 980px;  }
+        .h10 { width: 1093px; }
+        .h11 { width: 1207px; }
+        .h12 { width: 1320px; }
+    }
+    @else if 1105 == $grid {
+        .parent {
+            width: 1105px;
+        }
+        .h1, .h2, .h3, .h4, .h5, .h6,
+        .h7, .h8, .h9, .h10, .h11, .h12 {
+            margin: 0 35px 35px 0;
+        }
+        .h1  { width: 60px;   }
+        .h2  { width: 155px;  }
+        .h3  { width: 250px;  }
+        .h4  { width: 345px;  }
+        .h5  { width: 440px;  }
+        .h6  { width: 535px;  }
+        .h7  { width: 630px;  }
+        .h8  { width: 725px;  }
+        .h9  { width: 820px;  }
+        .h10 { width: 915px;  }
+        .h11 { width: 1010px; }
+        .h12 { width: 1105px; }
+    }
+    @else if 978 == $grid {
+        .parent {
+            width: 978px;
+        }
+        .h1  { width: 54px;  }
+        .h2  { width: 138px; }
+        .h3  { width: 222px; }
+        .h4  { width: 306px; }
+        .h5  { width: 390px; }
+        .h6  { width: 474px; }
+        .h7  { width: 558px; }
+        .h8  { width: 642px; }
+        .h9  { width: 726px; }
+        .h10 { width: 810px; }
+        .h11 { width: 894px; }
+        .h12 { width: 978px; }
+    }
+    @else if 748 == $grid {
+        .parent {
+            width: 748px;
+        }
+        .h1, .h2, .h3, .h4, .h5, .h6,
+        .h7, .h8, .h9, .h10, .h11, .h12 {
+            margin: 0 20px 20px 0;
+        }
+        .h1  { width: 44px;  }
+        .h2  { width: 108px; }
+        .h3  { width: 172px; }
+        .h4  { width: 236px; }
+        .h5  { width: 300px; }
+        .h6  { width: 364px; }
+        .h7  { width: 428px; }
+        .h8  { width: 492px; }
+        .h9  { width: 556px; }
+        .h10 { width: 620px; }
+        .h11 { width: 684px; }
+        .h12 { width: 748px; }
+    }
+    @else if 295 == $grid {
+        .parent {
+            width: 300px;
+        }
+        .h1, .h2, .h3, .h4, .h5, .h6,
+        .h7, .h8, .h9, .h10, .h11, .h12 {
+            margin: 0 5px 5px 0;
+        }
+        .h1  { width: 20px;  }
+        .h2  { width: 45px;  }
+        .h3  { width: 70px;  }
+        .h4  { width: 95px;  }
+        .h5  { width: 120px; }
+        .h6  { width: 145px; }
+        .h7  { width: 170px; }
+        .h8  { width: 195px; }
+        .h9  { width: 220px; }
+        .h10 { width: 245px; }
+        .h11 { width: 270px; }
+        .h12 { width: 295px; }
+    }
+    @else {
+        @warn "The given grid \"#{$grid}\" does not match the existing grids (1320, 1105, 978, 748, 295).";
+    }
+}
+
+
+.v1  { height: 54px;  }
+.v2  { height: 138px; }
+.v3  { height: 222px; }
+.v4  { height: 306px; }
+.v5  { height: 390px; }
+.v6  { height: 474px; }
+.v7  { height: 558px; }
+.v8  { height: 642px; }
+.v9  { height: 726px; }
+.v10 { height: 810px; }
+.v11 { height: 894px; }
+.v12 { height: 978px; }

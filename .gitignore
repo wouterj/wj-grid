@@ -1,0 +1,6 @@
+; Vim
+*~
+*.swp
+
+; Sass
+.sass-cache/
