@@ -3,5 +3,23 @@
 // include the responsive grid
 @include wj-grid;
 
-// include the 195 static grid
-// @include wj-grid(195);
+#small {
+    width: 295px;
+
+    // include the 295 static grid
+    @include wj-grid(295);
+}
+
+#978 {
+    width: 978px;
+
+    // include the 978 static grid
+    @include wj-grid(978);
+}
+
+#large {
+    width: 1320px;
+
+    // include the 1320 static grid
+    @include wj-grid(1320);
+}
