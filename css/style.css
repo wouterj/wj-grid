@@ -1,48 +1,263 @@
-/*
-Syntax error: File to import not found or unreadable: wj-grid.
-              Load path: e:/Wouter/web/wamp/www/css3/wj-grid
-        on line 1 of style.scss
+/* GRID */
+.h1, .h2, .h3, .h4, .h5, .h6,
+.h7, .h8, .h9, .h10, .h11, .h12 {
+  float: left;
+  margin: 0 30px 30px 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
-1: @import 'wj-grid';
-2: 
-3: @include wj-grid;
+.end {
+  margin-right: 0 !important; }
 
-Backtrace:
-style.scss:1
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/import_node.rb:64:in `rescue in import'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/import_node.rb:42:in `import'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/import_node.rb:25:in `imported_file'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:149:in `rescue in visit_import'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:154:in `visit_import'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:18:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/base.rb:53:in `map'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:47:in `visit_root'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:18:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:7:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/root_node.rb:20:in `render'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/engine.rb:300:in `_render'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/engine.rb:247:in `render'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/plugin/compiler.rb:340:in `update_stylesheet'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/plugin/compiler.rb:202:in `block in update_stylesheets'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/plugin/compiler.rb:200:in `each'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/plugin/compiler.rb:200:in `update_stylesheets'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/plugin/compiler.rb:298:in `block in watch'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/vendor/listen/lib/listen/multi_listener.rb:86:in `call'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/vendor/listen/lib/listen/multi_listener.rb:86:in `on_change'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/vendor/listen/lib/listen/multi_listener.rb:95:in `block in initialize_adapter'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/vendor/listen/lib/listen/adapters/polling.rb:55:in `call'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/vendor/listen/lib/listen/adapters/polling.rb:55:in `poll'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/vendor/listen/lib/listen/adapters/polling.rb:31:in `block in start'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: wj-grid.\A               Load path: e:/Wouter/web/wamp/www/css3/wj-grid\A         on line 1 of style.scss\A \A 1: @import 'wj-grid';\A 2: \A 3: @include wj-grid;"; }
+.parent {
+  margin: 0 auto; }
+
+.v1 {
+  height: 54px; }
+
+.v2 {
+  height: 138px; }
+
+.v3 {
+  height: 222px; }
+
+.v4 {
+  height: 306px; }
+
+.v5 {
+  height: 390px; }
+
+.v6 {
+  height: 474px; }
+
+.v7 {
+  height: 558px; }
+
+.v8 {
+  height: 642px; }
+
+.v9 {
+  height: 726px; }
+
+.v10 {
+  height: 810px; }
+
+.v11 {
+  height: 894px; }
+
+.v12 {
+  height: 978px; }
+
+@media all and (min-width: 1320px) {
+  .parent {
+    background: url(http://griddle.it/1320-12-40);
+    width: 1320px; }
+
+  .h1, .h2, .h3, .h4, .h5, .h6,
+  .h7, .h8, .h9, .h10, .h11, .h12 {
+    margin: 0 40px 40px 0; }
+
+  .h1 {
+    width: 73px; }
+
+  .h2 {
+    width: 187px; }
+
+  .h3 {
+    width: 300px; }
+
+  .h4 {
+    width: 413px; }
+
+  .h5 {
+    width: 527px; }
+
+  .h6 {
+    width: 640px; }
+
+  .h7 {
+    width: 753px; }
+
+  .h8 {
+    width: 867px; }
+
+  .h9 {
+    width: 980px; }
+
+  .h10 {
+    width: 1093px; }
+
+  .h11 {
+    width: 1207px; }
+
+  .h12 {
+    width: 1320px; } }
+@media all and (min-width: 1105px) and (max-width: 1320px) {
+  .parent {
+    width: 1105px; }
+
+  .h1, .h2, .h3, .h4, .h5, .h6,
+  .h7, .h8, .h9, .h10, .h11, .h12 {
+    margin: 0 35px 35px 0; }
+
+  .h1 {
+    width: 60px; }
+
+  .h2 {
+    width: 155px; }
+
+  .h3 {
+    width: 250px; }
+
+  .h4 {
+    width: 345px; }
+
+  .h5 {
+    width: 440px; }
+
+  .h6 {
+    width: 535px; }
+
+  .h7 {
+    width: 630px; }
+
+  .h8 {
+    width: 725px; }
+
+  .h9 {
+    width: 820px; }
+
+  .h10 {
+    width: 915px; }
+
+  .h11 {
+    width: 1010px; }
+
+  .h12 {
+    width: 1105px; } }
+@media all and (min-width: 978px) and (max-width: 1105px) {
+  .parent {
+    width: 978px; }
+
+  .h1 {
+    width: 54px; }
+
+  .h2 {
+    width: 138px; }
+
+  .h3 {
+    width: 222px; }
+
+  .h4 {
+    width: 306px; }
+
+  .h5 {
+    width: 390px; }
+
+  .h6 {
+    width: 474px; }
+
+  .h7 {
+    width: 558px; }
+
+  .h8 {
+    width: 642px; }
+
+  .h9 {
+    width: 726px; }
+
+  .h10 {
+    width: 810px; }
+
+  .h11 {
+    width: 894px; }
+
+  .h12 {
+    width: 978px; } }
+@media all and (min-width: 748px) and (max-width: 978px) {
+  .parent {
+    width: 748px; }
+
+  .h1, .h2, .h3, .h4, .h5, .h6,
+  .h7, .h8, .h9, .h10, .h11, .h12 {
+    margin: 0 20px 20px 0; }
+
+  .h1 {
+    width: 44px; }
+
+  .h2 {
+    width: 108px; }
+
+  .h3 {
+    width: 172px; }
+
+  .h4 {
+    width: 236px; }
+
+  .h5 {
+    width: 300px; }
+
+  .h6 {
+    width: 364px; }
+
+  .h7 {
+    width: 428px; }
+
+  .h8 {
+    width: 492px; }
+
+  .h9 {
+    width: 556px; }
+
+  .h10 {
+    width: 620px; }
+
+  .h11 {
+    width: 684px; }
+
+  .h12 {
+    width: 748px; } }
+@media all and (max-width: 748px) {
+  .parent {
+    width: 300px; }
+
+  .h1, .h2, .h3, .h4, .h5, .h6,
+  .h7, .h8, .h9, .h10, .h11, .h12 {
+    margin: 0 5px 5px 0; }
+
+  .h1 {
+    width: 20px; }
+
+  .h2 {
+    width: 45px; }
+
+  .h3 {
+    width: 70px; }
+
+  .h4 {
+    width: 95px; }
+
+  .h5 {
+    width: 120px; }
+
+  .h6 {
+    width: 145px; }
+
+  .h7 {
+    width: 170px; }
+
+  .h8 {
+    width: 195px; }
+
+  .h9 {
+    width: 220px; }
+
+  .h10 {
+    width: 245px; }
+
+  .h11 {
+    width: 270px; }
+
+  .h12 {
+    width: 295px; } }
