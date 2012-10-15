@@ -3,7 +3,5 @@
 // include the responsive grid
 @include wj-grid;
 
-// include a specific grid
-// $wj-responsive: false
-//
-// @include wj-grid(295); or another grid
+// include the 195 static grid
+// @include wj-grid(195);
