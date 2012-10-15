@@ -8,6 +8,11 @@
 }
 .end { margin-right: 0 !important; }
 .parent { margin: 0 auto; }
+.parent::after {
+    content: '';
+    display: block;
+    clear: both;
+}
 
 @mixin wj-grid($grid: responsive) {
     @if 'responsive' == $grid {
