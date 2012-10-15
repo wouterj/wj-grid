@@ -12,42 +12,6 @@
 .parent {
   margin: 0 auto; }
 
-.v1 {
-  height: 54px; }
-
-.v2 {
-  height: 138px; }
-
-.v3 {
-  height: 222px; }
-
-.v4 {
-  height: 306px; }
-
-.v5 {
-  height: 390px; }
-
-.v6 {
-  height: 474px; }
-
-.v7 {
-  height: 558px; }
-
-.v8 {
-  height: 642px; }
-
-.v9 {
-  height: 726px; }
-
-.v10 {
-  height: 810px; }
-
-.v11 {
-  height: 894px; }
-
-.v12 {
-  height: 978px; }
-
 @media all and (min-width: 1320px) {
   .parent {
     background: url(http://griddle.it/1320-12-40);
